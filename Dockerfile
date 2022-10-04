@@ -24,7 +24,7 @@ ARG KAFKA_VERSION
 
 RUN apk add --no-cache bash less \
 && install-php-extensions \
-    pdo_mysql pdo_pgsql redis pcntl sockets gd \
+    pdo_mysql pdo_pgsql redis pcntl sockets gd zip \
     xdebug-$XDEBUG_VERSION \
     grpc-$GRPC_VERSION \
     protobuf-$PROTOBUF_VERSION \
