@@ -1,7 +1,7 @@
 # Laravel base Docker image
 Small Docker image for Laravel with RoadRunner and some needed extensions
 
-Example docker-compose.yml:
+Usage example with docker-compose.yaml:
 
 ```yaml
 version: '3.8'
