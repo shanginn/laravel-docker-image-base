@@ -1,9 +1,8 @@
-ARG PHP_VERSION=8.1
+ARG PHP_VERSION=8.2
 ARG COMPOSER_VERSION=latest
-ARG RR_VERSION=2.11.0
-ARG XDEBUG_VERSION=3.1.5
-ARG GRPC_VERSION=1.48.0
-ARG PROTOBUF_VERSION=3.21.5
+ARG RR_VERSION=2023.2
+ARG GRPC_VERSION=1.56.0
+ARG PROTOBUF_VERSION=3.23.4
 ARG KAFKA_VERSION=6.0.3
 ARG WWWGROUP=1337
 
@@ -25,7 +24,6 @@ ARG KAFKA_VERSION
 RUN apk add --no-cache bash less \
 && install-php-extensions \
     pdo_mysql pdo_pgsql redis pcntl sockets gd zip \
-    xdebug-$XDEBUG_VERSION \
     grpc-$GRPC_VERSION \
     protobuf-$PROTOBUF_VERSION \
     rdkafka-$KAFKA_VERSION
